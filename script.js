@@ -19,6 +19,10 @@ scene.add(cube);
 
 // Camera
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height); // Field of view (vision angle), aspect ratio
+// Moving the cube so its visible. Otherwise, camera would be inside cube
+camera.position.z = 3;
+camera.position.x = 1.5;
+camera.position.y = 1;
 scene.add(camera);
 
 // Renderer
